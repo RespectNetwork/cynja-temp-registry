@@ -2,7 +2,7 @@
 
 This is a temporary XDI registry service for Cynja.
 
-Sample deployment: http://54.88.185.78:3081/
+Sample deployment: http://chatapi.respectnetwork.net:3080/
 
 ### How to build
 
