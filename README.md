@@ -2,7 +2,7 @@
 
 This is a temporary XDI registry service for Cynja.
 
-Sample deployment: http://registry.respectnetwork.net:3080/
+Sample deployment: http://registry.respectnetwork.net:3081/
 
 ### How to build
 
