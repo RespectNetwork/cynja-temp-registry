@@ -29,9 +29,11 @@
 
 	<!-- SIMPLE REGISTRY MESSAGING TARGET at /registry -->
 
-	<bean id="graphfactory1" class="xdi2.core.impl.keyvalue.bdb.BDBKeyValueGraphFactory" />
+	<bean id="graphfactory1" class="xdi2.core.impl.json.bdb.BDBJSONGraphFactory" />
 
-	<bean id="graph1" factory-bean="graphfactory1" factory-method="openGraph" />
+	<bean id="graph1" factory-bean="graphfactory1" factory-method="openGraph">
+		<constructor-arg><value>REGISTRY</value></constructor-arg>
+	</bean>
 
 	<bean name="/registry" class="xdi2.messaging.target.impl.graph.GraphMessagingTarget">
 		<property name="graph" ref="graph1" />
