@@ -23,3 +23,13 @@ To build all components.
 Then go to:
 
 	http://localhost:3081/
+
+### Storage
+
+The **BDBJSONGraphFactory** is used to store graphs in BDB:
+
+	<bean id="graphfactory1" class="xdi2.core.impl.json.bdb.BDBJSONGraphFactory" />
+
+See here for more information about storage options:
+
+https://github.com/projectdanube/xdi2/wiki/Available-graph-stores
